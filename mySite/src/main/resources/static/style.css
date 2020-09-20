@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    color: #454545;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -13,14 +12,23 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: #fff5ea;
 }
 
 h1 {
     text-align: center;
     font-size: 25px;
     margin: 4vw;
+    color: #5f5f5f;
 
 }
+
+h4 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 
 #splash_forside {
     background-image: url("images/forside.jpg");
@@ -37,7 +45,7 @@ h1 {
     width: 92%;
     height: 3px;
     margin: 0 auto;
-    background-image: linear-gradient(to right, darkorange, yellow);
+    background-image: linear-gradient(to right, #ffeb00, darkorange);
     border-style: none;
 }
 
@@ -85,6 +93,104 @@ h1 {
 .topnav .icon {
     display: none;
 }
+
+
+
+/*forside-grid*/
+
+#forside_grid {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#forside_grid img {
+    width: 35vw;
+    height: 20vw;
+}
+
+.box_wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.pic_container {
+    position: relative;
+    cursor: pointer;
+    margin: 2vw;
+}
+
+.pic_container img {
+    display: block;
+}
+
+.pic_container:hover {
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
+}
+
+.pic_text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+    /* Black see-through */
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Footer*/
+footer {
+    margin-top: 8vw;
+    width: 100%;
+    background-image: linear-gradient(to right, #ffcd00, darkorange);
+    color: white;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    font-size: 14px;
+}
+
+.kontakt {
+    flex-basis: 100px;
+    margin: 1.5vw;
+}
+
+
+a.fa-facebook,
+a.fa-instagram {
+    color: white;
+    text-decoration: none;
+    font-size: 5vw;
+    height: 2vw;
+    width: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+a.fa-facebook:before,
+a.fa-instagram:before {
+    color: white;
+}
+
+.fa {
+
+    text-align: center;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+
 
 @media screen and (max-width: 700px) {
     .topnav a:not(:first-child) {
@@ -140,5 +246,19 @@ h1 {
         padding-top: 2vw;
         float: right;
         position: relative;
+    }
+
+    .kontakt {
+        flex-basis: 200px;
+    }
+
+    a.fa-facebook,
+    a.fa-instagram {
+        text-decoration: none;
+        font-size: 2vw;
+        height: 1vw;
+        width: 1vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
 }
