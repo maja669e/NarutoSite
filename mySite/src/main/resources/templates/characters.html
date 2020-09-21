@@ -18,11 +18,15 @@
     <meta name="msapplication-config" content="myIcons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <style>
+
+    </style>
+
+
+
 </head>
 
 <body>
-
-
 <header id="myTopnav">
     <div>
         <div class="topnav">
@@ -41,6 +45,158 @@
     </div>
 
 </header>
+
+<h1>Characters</h1>
+
+
+<div class="row">
+    <div class="column">
+        <img src="/images/itachi.jpg" onclick="openModal();currentSlide(1)">
+    </div>
+    <div class="column">
+        <img src="/images/kakashi.jpg" onclick="openModal();currentSlide(2)">
+    </div>
+    <div class="column">
+        <img src="/images/naruto.jpg" onclick="openModal();currentSlide(3)">
+    </div>
+    <div class="column">
+        <img src="/images/sasuke.png" onclick="openModal();currentSlide(4)">
+    </div>
+
+    <div class="column">
+        <img src="/images/minato.png" onclick="openModal();currentSlide(5)">
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="/images/itachi.jpg">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="/images/kakashi.JPG">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="/images/naruto.jpg">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="/images/sasuke.png">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="/images/minato.png">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+
+        <div class="column">
+            <img class="demo cursor" src="/images/itachi.jpg" onclick="currentSlide(1)" alt="Itachi">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/images/kakashi.jpg" onclick="currentSlide(2)" alt="Kakashi">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/images/naruto.jpg" onclick="currentSlide(3)" alt="Naruto">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="/images/sasuke.png" onclick="currentSlide(4)" alt="Sasuke">
+        </div>
+
+        <div class="column">
+            <img class="demo cursor" src="/images/minato.png" onclick="currentSlide(5)" alt="Minato">
+        </div>
+    </div>
+</div>
+
+
+<!-- <div id="grid-container">
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="grid-item">
+            <img class="modal-content" src="/images/itachi.jpg" alt="Itachi"></div>
+        <div id="caption">Itachi Uchiha</div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="grid-item">
+            <img class="modal-content" src="/images/kakashi.JPG" alt="Kakashi"></div>
+        <div id="caption">Kakashi Hatake</div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="grid-item">
+            <img class="modal-content" src="/images/naruto.jpg" alt="Naruto"></div>
+        <div id="caption"></div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="grid-item">
+            <img class="modal-content" src="/images/sasuke.png" alt="characters"></div>
+        <div id="caption"></div>
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="grid-item">
+            <img class="modal-content" src="/images/sakura.JPG" alt="characters"></div>
+        <div id="caption"></div>
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="grid-item">
+            <img class="modal-content" src="/images/characters.jpg" alt="characters"></div>
+        <div id="caption"></div>
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="grid-item">
+            <img class="modal-content" src="/images/characters.jpg" alt="characters"></div>
+        <div id="caption"></div>
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="grid-item">
+            <img class="modal-content" src="/images/characters.jpg" alt="characters"></div>
+        <div id="caption"></div>
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="grid-item">
+            <img class="modal-content" src="/images/characters.jpg" alt="characters"></div>
+        <div id="caption"></div>
+    </div>
+</div>
+-->
 
 <footer>
 
@@ -61,6 +217,10 @@
 
     </div>
 </footer>
-<script src="script.js"></script>
+
+
+<script src="script.js">
+
+</script>
 </body>
 </html>
