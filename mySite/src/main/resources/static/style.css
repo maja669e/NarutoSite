@@ -30,7 +30,6 @@ h4 {
 }
 
 
-
 #splash_forside {
     background-image: url("images/forside.jpg");
     width: 100%;
@@ -94,7 +93,6 @@ h4 {
 .topnav .icon {
     display: none;
 }
-
 
 
 /*forside-grid*/
@@ -360,6 +358,17 @@ h4 {
     text-align: center;
 }
 
+/*---------Construction----------*/
+
+#construction {
+    background-image: url("/images/construction.jpg");
+    background-size: cover;
+    width: 60vw;
+    height: 45vw;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
 /*---------Footer----------*/
 footer {
     margin-top: 8vw;
@@ -458,7 +467,6 @@ a.fa-instagram:before {
         height: 28vw;
         box-shadow: 4px 4px 3px #b2b2b2;
     }
-
 
 
 }

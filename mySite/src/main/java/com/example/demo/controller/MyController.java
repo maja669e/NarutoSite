@@ -14,9 +14,20 @@ public class MyController {
     public String characters() {
         return "characters";
     }
+
     @GetMapping("/about")
     public String about() {
         return "about";
+    }
+
+    @GetMapping("/contact")
+    public String contact() {
+        return "contact";
+    }
+
+    @GetMapping("/stats")
+    public String stats() {
+        return "stats";
     }
 
 }
