@@ -117,11 +117,12 @@ h4 {
 .pic_container {
     position: relative;
     cursor: pointer;
-    margin: 2vw;
+    margin: 3vw 0 2vw 3vw;
 }
 
 .pic_container img {
     display: block;
+
 }
 
 .pic_container:hover {
@@ -144,16 +145,15 @@ h4 {
 /*------Characters--------*/
 .row {
     display: grid;
-    grid-gap: 2.5vw;
     grid-template-columns: auto auto auto;
-    padding: 10px;
-    margin: 0vw 10vw 10vw 10vw;
+    margin: 5vw 0 10vw 10vw;
 }
 
 .row img {
-    width: 22vw;
-    height: 24vw;
+    width: 21vw;
+    height: 22vw;
     box-shadow: 1px 5px 6px 1px rgba(0, 0, 0, 0.20);
+    margin-top: 3vw;
 }
 
 .row img:hover {
@@ -161,15 +161,7 @@ h4 {
     cursor: pointer;
 }
 
-.grid-item {
-    text-align: center;
-}
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .column {
     float: left;
@@ -312,21 +304,20 @@ h4 {
     box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.10);
     margin: 0 12vw 4vw 12vw;
     padding: 4vw 2vw 4vw 2vw;
-
+    justify-content: space-around;
 }
 
 .about_text {
-    flex-basis: 400px;
-    margin: 0 auto;
-    padding-left: 1vw;
-
+    flex-basis: 300px;
 }
 
 .about_picture {
-    flex-basis: 500px;
-    margin: 0 auto;
+    flex-basis: 400px;
+}
 
-
+.about_picture img {
+    width: 35vw;
+    height: 20vw;
 }
 
 #about_content .sectionwrapper {
@@ -337,24 +328,23 @@ h4 {
     background-attachment: fixed;
     padding: 4rem;
     margin-bottom: 5vw;
+    justify-content: center;
 }
 
 #about_content .col {
-    flex-basis: 250px;
-    flex-grow: 1;
+    flex-basis: 220px;
     display: flex;
     flex-direction: column;
     background: #fffbf7;
     box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.10);
     margin: 3rem;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 2%;
+    align-items: center;
+
 }
 
 #about_content .icons {
-    display: none;
-    font-size: 60px;
-    color: black;
     text-align: center;
 }
 
@@ -363,18 +353,23 @@ h4 {
 #construction {
     background-image: url("/images/construction.jpg");
     background-size: cover;
-    width: 60vw;
+    width: 80vw;
     height: 45vw;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 
 /*---------Footer----------*/
+
 footer {
     margin-top: 8vw;
     width: 100%;
     background-image: linear-gradient(to right, #ffcd00, darkorange);
     color: white;
+
+}
+
+#footer_info {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -417,6 +412,16 @@ a.fa-instagram:before {
 .fa:hover {
     opacity: 0.6;
 }
+
+.copyright p {
+    flex-basis: 200px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    padding: 2vw;
+}
+
 
 
 /*----Mobile----*/
@@ -466,6 +471,16 @@ a.fa-instagram:before {
         width: 30vw;
         height: 28vw;
         box-shadow: 4px 4px 3px #b2b2b2;
+    }
+
+    .about_box_wrapper {
+        text-align: center;
+    }
+
+    .about_picture img {
+        width: 100%;
+        height: 35vw;
+
     }
 
 
